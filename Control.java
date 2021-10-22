@@ -6,4 +6,9 @@ public class Control{
 
   }
 
+  public static String getOS(){
+
+    return System.getProperty("os.name");
+  }
+
 }
