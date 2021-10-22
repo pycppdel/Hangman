@@ -12,6 +12,8 @@ class MAIN{
     Hangman drawer = new Hangman();
     drawer.refresh();
 
+    System.out.println(drawer.hangman[0]);
+
     while (!quit){
 
       eingabe = new Scanner(System.in).next();

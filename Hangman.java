@@ -1,8 +1,28 @@
 public class Hangman {
 
+    public String[] hangman = new String[8];
+
+    hangman[0] =    "                      \n"+
+                    "         _____        \n"+
+                    "        |     |       \n"+
+                    "        |     O       \n"+
+                    "        |    /|\\     \n"+
+                    "        |    / \\     \n"+
+                    "      __|__           \n"+
+                    "     /     \\         \n";
+
+    hangman[1] =    "                      \n"+
+                    "         _____        \n"+
+                    "        |     |       \n"+
+                    "        |     O       \n"+
+                    "        |    /|\\     \n"+
+                    "        |    / \\     \n"+
+                    "      __|__           \n"+
+                    "     /     \\         \n";
+
     public Hangman() {
 
-
+        
 
     }
 
