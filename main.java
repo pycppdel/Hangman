@@ -1,10 +1,28 @@
+
+import java.lang.*;
+import java.util.*;
+
 class MAIN{
 
   public static void main(String[] args) throws Exception{
 
-    Hangman a = new Hangman();
+    boolean quit = false;
+    String eingabe;
 
-    a.refresh();
+    Hangman drawer = new Hangman();
+    drawer.refresh();
 
+    while (!quit){
+
+      eingabe = new Scanner(System.in).next();
+
+      if(eingabe.equals("quit")){
+        quit = true;
+      }
+
+      drawer.refresh();
+
+
+    }
   }
 }
