@@ -18,8 +18,9 @@ class MAIN{
 
     while (!quit){
 
+      System.out.println(controller.erraten+"\n\n");
       eingabe = new Scanner(System.in).next();
-
+      controller.guess(eingabe);
       if(eingabe.equals("quit")){
         quit = true;
       }
@@ -27,8 +28,6 @@ class MAIN{
 
 
       drawer.refresh();
-      System.out.println(controller.erraten);
-      controller.guess(eingabe);
 
 
     }
