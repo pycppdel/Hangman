@@ -1,33 +1,27 @@
 public class Hangman {
 
-<<<<<<< HEAD
-    public String[] hangman = new String[8];
-
-    hangman[0] =    "                      \n"+
-                    "         _____        \n"+
-                    "        |     |       \n"+
-                    "        |     O       \n"+
-                    "        |    /|\\     \n"+
-                    "        |    / \\     \n"+
-                    "      __|__           \n"+
-                    "     /     \\         \n";
-
-    hangman[1] =    "                      \n"+
-                    "         _____        \n"+
-                    "        |     |       \n"+
-                    "        |     O       \n"+
-                    "        |    /|\\     \n"+
-                    "        |    / \\     \n"+
-                    "      __|__           \n"+
-                    "     /     \\         \n";
-=======
-
-    public Hangman() {
->>>>>>> 3d21e547963a730406c84aca30fcb71830f080d7
+public String[] hangman = new String[8];
 
     public Hangman() {
 
-        
+
+      hangman[0] =    "                      \n"+
+                      "         _____        \n"+
+                      "        |     |       \n"+
+                      "        |     O       \n"+
+                      "        |    /|\\     \n"+
+                      "        |    / \\     \n"+
+                      "      __|__           \n"+
+                      "     /     \\         \n";
+
+      hangman[1] =    "                      \n"+
+                      "         _____        \n"+
+                      "        |     |       \n"+
+                      "        |     O       \n"+
+                      "        |    /|\\     \n"+
+                      "        |    / \\     \n"+
+                      "      __|__           \n"+
+                      "     /     \\         \n";
 
     }
 
