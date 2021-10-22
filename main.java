@@ -21,17 +21,13 @@ class MAIN{
       eingabe = new Scanner(System.in).next();
 
 
-      if(!true) {
+      if(false) {
         // Eingabe war richtig
       } else {
         // Eingabe war falsch
 
-        System.out.println(drawer.hangman[a]);
+        System.out.println(drawer.hangman[2]);
 
-        a--;
-        i++;
-
-        System.out.println(i);
         
       }
 
