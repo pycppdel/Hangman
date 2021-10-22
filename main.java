@@ -8,17 +8,33 @@ class MAIN{
 
     boolean quit = false;
     String eingabe;
+    int i = 0;
+    int a = 8;
 
     Hangman drawer = new Hangman();
     Control controller = new Control();
 
     drawer.refresh();
 
-    System.out.println(drawer.hangman[0]);
-
     while (!quit){
 
       eingabe = new Scanner(System.in).next();
+
+
+      if(!true) {
+        // Eingabe war richtig
+      } else {
+        // Eingabe war falsch
+
+        System.out.println(drawer.hangman[a]);
+
+        a--;
+        i++;
+
+        System.out.println(i);
+        
+      }
+
 
       if(eingabe.equals("quit")){
         quit = true;
