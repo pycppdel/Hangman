@@ -1,4 +1,4 @@
-
+import java.lang.Character;
 public class Control{
 
   String[] wortliste = {
@@ -38,12 +38,32 @@ public class Control{
     return System.getProperty("os.name");
   }
 
-  public void guess(char letter){
+  public boolean guess(String letter){
 
     if (chosen.contains(letter)){
 
-      
+      String neu = "";
+      for(int ind=0;ind < chosen.length(); ind++){
 
+        String j = Character.toString(chosen.charAt(ind));
+
+        if(j.equals(letter)){
+
+           neu += letter;
+        }
+        else{
+          neu += "_ ";
+        }
+
+
+      }
+
+      erraten = neu;
+
+      return true;
+    }
+    else{
+      return false;
     }
 
   }

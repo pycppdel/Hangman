@@ -44,6 +44,7 @@ class MAIN{
 
       drawer.refresh();
       System.out.println(controller.erraten);
+      controller.guess(eingabe);
 
 
     }

@@ -1,5 +1,6 @@
 public class Hangman {
 
+<<<<<<< HEAD
     public String[] hangman = new String[8];
 
     
@@ -86,6 +87,30 @@ public class Hangman {
                         "                      \n"+
                         "                      \n"+
                         "                      \n";
+=======
+public String[] hangman = new String[8];
+
+    public Hangman() {
+
+
+      hangman[0] =    "                      \n"+
+                      "         _____        \n"+
+                      "        |     |       \n"+
+                      "        |     O       \n"+
+                      "        |    /|\\     \n"+
+                      "        |    / \\     \n"+
+                      "      __|__           \n"+
+                      "     /     \\         \n";
+
+      hangman[1] =    "                      \n"+
+                      "         _____        \n"+
+                      "        |     |       \n"+
+                      "        |     O       \n"+
+                      "        |    /|\\     \n"+
+                      "        |    / \\     \n"+
+                      "      __|__           \n"+
+                      "     /     \\         \n";
+>>>>>>> b554f5e0013cc4ee1596a3dc19072de2aab991f1
 
     }
 
