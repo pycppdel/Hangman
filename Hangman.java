@@ -8,6 +8,6 @@ public class Hangman {
 
     public void refresh() throws Exception{
 
-      new ProcessBuilder("cls").inheritIO().start().waitFor();
+      new ProcessBuilder("cmd /c cls").inheritIO().start().waitFor();
     }
 }
