@@ -10,6 +10,8 @@ class MAIN{
     String eingabe;
 
     Hangman drawer = new Hangman();
+    Control controller = new Control();
+
     drawer.refresh();
 
     System.out.println(drawer.hangman[0]);
@@ -22,7 +24,10 @@ class MAIN{
         quit = true;
       }
 
+
+
       drawer.refresh();
+      System.out.println(controller.erraten);
 
 
     }
