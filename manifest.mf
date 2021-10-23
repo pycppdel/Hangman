@@ -1,0 +1,2 @@
+Main-Class: MAIN
+Class-Path: core.jar lib/ properties/
