@@ -6,7 +6,7 @@ public class Control{
     "Apfel",
     "Erde",
     "Pferd",
-    "Kanlisation",
+    "Kanalisation",
     "Frucht",
     "Essen",
     "Garten",
@@ -27,7 +27,7 @@ public class Control{
 
     for(int i=0; i<wortlength;i++){
 
-      erraten += "_ ";
+      erraten += "_";
     }
 
 
@@ -64,17 +64,16 @@ public void replace_letter(String letter) throws Exception{
 
   for(int i=0;i<z;i++){
 
-    if(Character.toString(chosen.charAt(i)).equals(letter)){
+    if(Character.toString(chosen.charAt(i)).equalsIgnoreCase(letter)){
 
-      neu += letter;
+      neu += Character.toLowerCase(letter.charAt(0));
 
 
     }
     else{
-      neu += Character.toString(erraten.charAt(i));
+      neu += Character.toString(Character.toLowerCase(erraten.charAt(i)));
+
     }
-
-
 
 
   }
@@ -83,5 +82,26 @@ public void replace_letter(String letter) throws Exception{
 
 
 }
+
+public void print_erraten(){
+
+  for(int i=0;i<erraten.length();i++){
+
+    if(Character.toString(erraten.charAt(i)).equals("_")){
+      System.out.print("_ ");
+    }
+    else{
+      System.out.print(erraten.charAt(i));
+    }
+
+
+  }
+
+  System.out.println();
+}
+
+
+
+
 
 }

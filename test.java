@@ -16,12 +16,11 @@ class TEST{
 
     while (!quit){
 
-      Thread.sleep(100);
 
       drawer.refresh();
 
 
-      System.out.println(controller.erraten);
+      controller.print_erraten();
       System.out.flush();
       guess = scan.next();
 
