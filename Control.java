@@ -27,7 +27,7 @@ public class Control{
 
     for(int i=0; i<wortlength;i++){
 
-      erraten += "_";
+      erraten += "_ ";
     }
 
 
@@ -67,11 +67,13 @@ public void replace_letter(String letter) throws Exception{
     if(Character.toString(chosen.charAt(i)).equalsIgnoreCase(letter)){
 
       neu += Character.toLowerCase(letter.charAt(0));
+      neu += " ";
 
 
     }
     else{
-      neu += Character.toString(Character.toLowerCase(erraten.charAt(i)));
+      neu += Character.toString(Character.toLowerCase(erraten.charAt(i*2)));
+      neu += " ";
 
     }
 
@@ -85,17 +87,7 @@ public void replace_letter(String letter) throws Exception{
 
 public void print_erraten(){
 
-  for(int i=0;i<erraten.length();i++){
-
-    if(Character.toString(erraten.charAt(i)).equals("_")){
-      System.out.print("_ ");
-    }
-    else{
-      System.out.print(erraten.charAt(i));
-    }
-
-
-  }
+  System.out.print(erraten);
 
   System.out.println();
 }
