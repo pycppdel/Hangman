@@ -3,7 +3,6 @@ public class Hangman {
     public String[] hangman = new String[9];
 
 
-
     public Hangman() {
 
         hangman[0] =    "                      \n"+
@@ -87,7 +86,7 @@ public class Hangman {
                         "                      \n"+
                         "                      \n";
 
-                      }
+}
 
     public void refresh() throws Exception{
 
