@@ -38,9 +38,49 @@ public class Control{
     return System.getProperty("os.name");
   }
 
-  public boolean guess(String letter){
+  public boolean guessed_letter(String letter){
 
-    return true;
+
+    if(letter.length() >= 2){
+
+      return false;
+    }
+
+    if (chosen.contains(letter)){
+
+      return true;
+    }
+
+    return false;
+
+
+
+}
+
+public void replace_letter(String letter) throws Exception{
+
+  int z = chosen.length();
+  String neu = "";
+
+  for(int i=0;i<z;i++){
+
+    if(Character.toString(chosen.charAt(i)).equals(letter)){
+
+      neu += letter;
+
+
+    }
+    else{
+      neu += Character.toString(erraten.charAt(i));
+    }
+
+
+
+
+  }
+
+  erraten = neu;
+
 
 }
 
