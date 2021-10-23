@@ -17,6 +17,8 @@ public class Control{
   int wortlength;
   int index;
 
+  String str = "";
+
   public Control(){
 
     index = (int)(Math.random()*1000%wortliste.length);
@@ -91,7 +93,18 @@ public void print_erraten(){
 
 public boolean won(){
 
-  return (erraten.equalsIgnoreCase(chosen));
+  str = "";
+
+  for(int i = 0; i < erraten.length(); i++) {
+    if(!Character.toString(erraten.charAt(i)).equals(" ")) {
+      str += Character.toString(erraten.charAt(i));
+    }
+  }
+
+  System.out.println(str);
+
+  return (str.equalsIgnoreCase(chosen));
+
 }
 
 
