@@ -67,14 +67,11 @@ public void replace_letter(String letter) throws Exception{
     if(Character.toString(chosen.charAt(i)).equalsIgnoreCase(letter)){
 
       neu += Character.toLowerCase(letter.charAt(0));
-      neu += " ";
 
 
     }
     else{
-      neu += Character.toString(Character.toLowerCase(erraten.charAt(i*2)));
-      neu += " ";
-
+      neu += Character.toString(Character.toLowerCase(erraten.charAt(i)));
     }
 
 
