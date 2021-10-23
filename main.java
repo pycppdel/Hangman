@@ -15,12 +15,23 @@ class MAIN{
 
     while (!quit){
 
+<<<<<<< HEAD
       
 
       drawer.refresh();
 
 
       
+=======
+
+
+      eingabe = new java.util.Scanner(System.in).next();
+      drawer.refresh();
+
+
+        System.out.println(drawer.hangman[0]);
+        System.out.flush();
+>>>>>>> cd8224e4af3def4bffa404afa06ca85c967d0d28
 
 
       if(eingabe.equals("quit")){
@@ -29,7 +40,10 @@ class MAIN{
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd8224e4af3def4bffa404afa06ca85c967d0d28
     }
   }
 }
