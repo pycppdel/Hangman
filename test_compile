@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+javac Hangman.java
+javac Control.java
+javac test.java
+java TEST
