@@ -20,6 +20,8 @@ class MAIN{
 
       eingabe = new Scanner(System.in).next();
 
+      drawer.refresh();
+
 
       if(false) {
         // Eingabe war richtig
@@ -38,10 +40,8 @@ class MAIN{
 
 
 
-      drawer.refresh();
       System.out.println(controller.erraten);
       controller.guess(eingabe);
-
 
     }
   }
