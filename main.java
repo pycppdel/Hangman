@@ -7,7 +7,7 @@ class MAIN{
   public static void main(String[] args) throws Exception{
 
     boolean quit = false;
-    String eingabe;
+    String eingabe = "";
     Hangman drawer = new Hangman();
     Control controller = new Control();
 
@@ -15,10 +15,11 @@ class MAIN{
 
     while (!quit){
 
-        drawer.refresh();
+        //drawer.refresh();
 
 
         System.out.println(drawer.hangman[0]);
+        System.out.flush();
 
 
 
