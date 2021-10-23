@@ -15,7 +15,7 @@ class MAIN{
 
     while (!quit){
 
-
+        drawer.refresh();
 
 
         System.out.println(drawer.hangman[a]);
@@ -23,7 +23,7 @@ class MAIN{
 
         System.out.println(i);
 
-      
+
 
 
 
@@ -33,7 +33,6 @@ class MAIN{
 
 
 
-      drawer.refresh();
 
 
     }
