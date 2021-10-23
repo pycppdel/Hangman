@@ -86,11 +86,7 @@ public class Hangman {
                         "                      \n"+
                         "                      \n";
 
-<<<<<<< HEAD
     }
-=======
-}
->>>>>>> cd8224e4af3def4bffa404afa06ca85c967d0d28
 
     public void refresh() throws Exception{
 
