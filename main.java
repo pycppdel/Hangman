@@ -18,10 +18,7 @@ class MAIN{
         drawer.refresh();
 
 
-        System.out.println(drawer.hangman[a]);
-
-
-        System.out.println(i);
+        System.out.println(drawer.hangman[0]);
 
 
 

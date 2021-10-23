@@ -40,6 +40,8 @@ public class Control{
 
   public boolean guess(String letter){
 
-    
+
+return true;
+}
 
 }

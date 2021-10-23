@@ -1,6 +1,6 @@
 public class Hangman {
 
-    public String[] hangman = new String[8];
+    public String[] hangman = new String[9];
 
 
 
@@ -86,6 +86,8 @@ public class Hangman {
                         "                      \n"+
                         "                      \n"+
                         "                      \n";
+
+                      }
 
     public void refresh() throws Exception{
 
