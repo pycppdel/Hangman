@@ -100,6 +100,11 @@ public void print_erraten(){
   System.out.println();
 }
 
+public boolean won(){
+
+  return (erraten.equalsIgnoreCase(chosen));
+}
+
 
 
 

@@ -1,7 +1,7 @@
 public class Hangman {
 
     String[] hangman = new String[9];
-    int index = 0;
+    int index = 1;
 
 
     public Hangman() {
