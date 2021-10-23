@@ -40,32 +40,8 @@ public class Control{
 
   public boolean guess(String letter){
 
-    if (chosen.contains(letter)){
 
-      String neu = "";
-      for(int ind=0;ind < chosen.length(); ind++){
-
-        String j = Character.toString(chosen.charAt(ind));
-
-        if(j.equals(letter)){
-
-           neu += letter;
-        }
-        else{
-          neu += "_ ";
-        }
-
-
-      }
-
-      erraten = neu;
-
-      return true;
-    }
-    else{
-      return false;
-    }
-
-  }
+return true;
+}
 
 }

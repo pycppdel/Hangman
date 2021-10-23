@@ -8,9 +8,6 @@ class MAIN{
 
     boolean quit = false;
     String eingabe;
-    int i = 0;
-    int a = 8;
-
     Hangman drawer = new Hangman();
     Control controller = new Control();
 
@@ -18,11 +15,12 @@ class MAIN{
 
     while (!quit){
 
-      eingabe = new Scanner(System.in).next();
+        drawer.refresh();
 
       drawer.refresh();
 
 
+<<<<<<< HEAD
       if(false) {
         // Eingabe war richtig
       } else {
@@ -32,6 +30,12 @@ class MAIN{
 
         
       }
+=======
+        System.out.println(drawer.hangman[0]);
+
+
+
+>>>>>>> b046d162ea4d6e8958869b20ec6066608cabf782
 
 
       if(eingabe.equals("quit")){
@@ -40,8 +44,11 @@ class MAIN{
 
 
 
+<<<<<<< HEAD
       System.out.println(controller.erraten);
       controller.guess(eingabe);
+=======
+>>>>>>> b046d162ea4d6e8958869b20ec6066608cabf782
 
     }
   }

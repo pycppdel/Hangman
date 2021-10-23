@@ -1,8 +1,11 @@
 public class Hangman {
 
     public String[] hangman = new String[9];
+<<<<<<< HEAD
+=======
 
-    
+>>>>>>> b046d162ea4d6e8958869b20ec6066608cabf782
+
 
     public Hangman() {
 
@@ -87,7 +90,11 @@ public class Hangman {
                         "                      \n"+
                         "                      \n";
 
+<<<<<<< HEAD
     }
+=======
+                      }
+>>>>>>> b046d162ea4d6e8958869b20ec6066608cabf782
 
     public void refresh() throws Exception{
 
