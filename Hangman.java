@@ -1,11 +1,12 @@
 public class Hangman {
 
-    public String[] hangman = new String[9];
+    String[] hangman = new String[9];
+    int index = 0;
 
 
     public Hangman() {
 
-        hangman[0] =    "                      \n"+
+        hangman[7] =    "                      \n"+
                         "         _____        \n"+
                         "        |     |       \n"+
                         "        |     O       \n"+
@@ -14,7 +15,7 @@ public class Hangman {
                         "      __|__           \n"+
                         "     /     \\         \n";
 
-        hangman[1] =    "                      \n"+
+        hangman[6] =    "                      \n"+
                         "         _____        \n"+
                         "        |     |       \n"+
                         "        |     O       \n"+
@@ -23,20 +24,11 @@ public class Hangman {
                         "      __|__           \n"+
                         "     /     \\         \n";
 
-        hangman[2] =    "                      \n"+
+        hangman[5] =    "                      \n"+
                         "         _____        \n"+
                         "        |     |       \n"+
                         "        |     O       \n"+
                         "        |     |       \n"+
-                        "        |             \n"+
-                        "      __|__           \n"+
-                        "     /     \\         \n";
-
-        hangman[3] =    "                      \n"+
-                        "         _____        \n"+
-                        "        |     |       \n"+
-                        "        |     O       \n"+
-                        "        |             \n"+
                         "        |             \n"+
                         "      __|__           \n"+
                         "     /     \\         \n";
@@ -44,13 +36,22 @@ public class Hangman {
         hangman[4] =    "                      \n"+
                         "         _____        \n"+
                         "        |     |       \n"+
+                        "        |     O       \n"+
+                        "        |             \n"+
+                        "        |             \n"+
+                        "      __|__           \n"+
+                        "     /     \\         \n";
+
+        hangman[3] =    "                      \n"+
+                        "         _____        \n"+
+                        "        |     |       \n"+
                         "        |             \n"+
                         "        |             \n"+
                         "        |             \n"+
                         "      __|__           \n"+
                         "     /     \\         \n";
 
-        hangman[5] =    "                      \n"+
+        hangman[2] =    "                      \n"+
                         "         _____        \n"+
                         "        |             \n"+
                         "        |             \n"+
@@ -59,7 +60,7 @@ public class Hangman {
                         "      __|__           \n"+
                         "     /     \\         \n";
 
-        hangman[6] =    "                      \n"+
+        hangman[1] =    "                      \n"+
                         "                      \n"+
                         "        |             \n"+
                         "        |             \n"+
@@ -68,7 +69,7 @@ public class Hangman {
                         "      __|__           \n"+
                         "     /     \\         \n";
 
-        hangman[7] =    "                      \n"+
+        hangman[0] =    "                      \n"+
                         "                      \n"+
                         "                      \n"+
                         "                      \n"+
@@ -76,15 +77,6 @@ public class Hangman {
                         "                      \n"+
                         "      __ __           \n"+
                         "     /     \\         \n";
-
-        hangman[8] =    "                      \n"+
-                        "                      \n"+
-                        "                      \n"+
-                        "                      \n"+
-                        "                      \n"+
-                        "                      \n"+
-                        "                      \n"+
-                        "                      \n";
 
     }
 
@@ -96,7 +88,28 @@ public class Hangman {
             new ProcessBuilder("clear").inheritIO().start().waitFor();
         }
 
+    }
 
+    public String drawCurrentHangman() {
+
+        return hangman[index-1];
+
+    }
+
+    public String drawNextHangman() {
+
+        index++;
+        return hangman[index-1];
+
+    }
+
+    public boolean checkForLoser() {
+
+        if(index == 8) {
+            return true;
+        } else {
+            return false;
+        }
 
     }
 }
